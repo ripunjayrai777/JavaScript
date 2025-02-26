@@ -1,1 +1,2 @@
-console.log("ripu")
+console.log("ripu");
+console.log("eepu");
