@@ -1,2 +1,2 @@
 # JavaScript
-Learning Javascript- one for learning purpose.
+Learning Javascript- only for learning purpose.
