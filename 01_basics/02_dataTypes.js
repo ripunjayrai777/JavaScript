@@ -27,3 +27,5 @@ console.log(typeof "ripu"); //In console.log we use a function which name is typ
 console.log(typeof abc); // here we use typeof function for get the data type of all ready declared variable abc
 
 console.log(typeof null); //here we get data type of 'null' is 'object'
+
+console.log(typeof undefined); //here we get data type of 'undefined' is 'undefined' this is a special case
