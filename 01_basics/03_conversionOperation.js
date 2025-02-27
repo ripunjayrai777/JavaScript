@@ -81,4 +81,8 @@ let gameCounter = 100; //gameCounter is assign as 100
 gameCounter++; //this known as post increment.
 console.log(gameCounter); //here gameCounter will be print after the increment
 
+//If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+
+//If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
+
 //study link for Pre-increment and Post-increment: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
