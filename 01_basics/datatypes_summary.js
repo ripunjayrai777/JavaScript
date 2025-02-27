@@ -48,3 +48,36 @@ console.log(typeof myObj); //this will return object
 console.log(typeof superHeros); // this will also return object but this is a array named superHeros
 
 console.log(typeof bigNumber); //this will return bigint data type because this is stored as a bit integer
+//
+//
+//
+//
+//
+//
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                      Type of Memory in JS
+// There are two type of memory;
+// Stack Memory(Use for primitive)
+// Heap Memory (Use for Non-Primitive)
+
+let myName = "Ripunjay"; //ye stack memory me jayega aur jab bhi zarurt padega tab eska copy milega , koe operation(jaise next line me kiya hai) perform karne par eske original value me changing nahi hoga.. reason - stack memory
+let anotherName = myName; //myName k value ka copy yaha par aya aur anotherName aur initialize ho gya , myName k value me ko changing nahi hoga .. reason - stack memory
+console.log(anotherName); // yaha pr anotherName me jo value assign hua tha vo print hoga-- Ripunjay
+anotherName = "Abhay"; // here we are assigning other value to anotherName ,, to yaha pr anotherName ki value change ho jayega
+console.log(anotherName); //yaha new assign value print hoga
+// primitive data type will goes in stack memory and their will no changes in original variable still you directly change.
+
+//
+// But in the case of Non-primitive data type data will save in Heap , and whenever we need that element we will get that original references not any copy like primitive data type..
+//When we perform on that data then changes will also applied in original stored place in Heap
+//Example---
+let userOne = {
+  email: "ripu@gmail.com",
+  upi: "ripu@ypl",
+}; // in this object i saved email and upi of userOne , this will goes in Heap
+
+let userTwo = userOne; // reference of userOne will be assign in userTwo
+userTwo.email = "ripunjay@google.com"; //here we change the email of userTwo and we know that reference of userOne and references of userTwo are same so change will applied at references
+
+console.log(userOne.email); // return "ripunjay@google.com"
+console.log(userTwo.email); // return "ripunjay@google.com"
