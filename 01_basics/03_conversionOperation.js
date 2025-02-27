@@ -86,3 +86,9 @@ console.log(gameCounter); //here gameCounter will be print after the increment
 //If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
 
 //study link for Pre-increment and Post-increment: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+let num = 3; //assign 3 to num
+const y = num++; //assign post-increment of num to y, so value 'y' will 3 and then after 'num' assign to 'y' increment in the 'value of num' which is 4
+console.log(num, y);
+
+// Tip : jaha per prefix aur post fix ka use hua hai us par dhayan dijiye
