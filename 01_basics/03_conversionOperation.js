@@ -47,3 +47,38 @@ let someNumber = 54; // data type will be number
 let covertInStr = String(someNumber); //converting 'someNumber' in 'String' using String() function
 console.log(covertInStr); // Value will the 54 or remains same because use changing number in String.
 console.log(typeof covertInStr); //covertInStr  is converted into String from Number
+
+//************************************************ Operations **************************************** */
+
+let value = 3;
+let negValue = -value;
+console.log(negValue); // this will print negative 3, because in upper line we assign the 'negative of value' in 'negValue'
+
+// console.log(2 + 2); // addition operators
+// console.log(2 - 2); // subtraction operators
+// console.log(2 * 2); // multiply operators
+// console.log(2 ** 2); // power or exponential operators
+// console.log(2 / 2); // division operators
+// console.log(2 % 2); // modular operators
+
+let str1 = "hello";
+let str2 = " ripu";
+console.log(str1 + str2); //this will print "hello ripu"
+
+// console.log("1" + 2); // this will print '12'
+// console.log(1 + "2"); // this will print '12'
+// console.log("1" + 2 + 2); // this will print '122'
+// console.log(1 + 2 + "2");  //this will print '32' , but these type of code are not allowed to the perspective of code readability.
+
+console.log(+true); // this will  print 1, but is this not a good way to write the code.
+console.log(+""); //this will print 0
+
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2; //this is not the good way to assign the values
+console.log(num1, num2, num3);
+
+let gameCounter = 100; //gameCounter is assign as 100
+gameCounter++; //this known as post increment.
+console.log(gameCounter); //here gameCounter will be print after the increment
+
+//study link for Pre-increment and Post-increment: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
