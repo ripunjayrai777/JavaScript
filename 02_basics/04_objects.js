@@ -61,3 +61,24 @@ console.log(Object.values(tinderUser)); // here are we accessing the all values 
 console.log(Object.entries(tinderUser)); //here are gets the all entries of the tinderUser in the form of arrays in the array.Output of this is --: [ [ 'name', 'ripunjay' ], [ 'age', 25 ], [ 'loggedIn', true ] ]
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // this will return value in boolean , if isLoggedIn properties is exits in tinderUser then it will return true otherwise return false,
+
+// **************************   De-structuring Object   ***************************************************
+
+const course = {
+  courseName: "JS In Hindi",
+  courseFee: 999,
+  courseInstructor: "Hitesh Chaudhary",
+};
+
+// course.courseInstructor; // we can access by this method also but course word is repeats more and create confusions so we decide to use destructuring...
+
+const { courseInstructor: instructor } = course; //this is called de-structuring object and now we can use 'instructor' at the place of courseInstructor directly..
+console.log(instructor);
+
+// apna kaam kisi ko de dena hota hai - api
+// Data in form of Json---mostly like a object but their will no name and key and value both will in string so in double qotes
+// {
+// "name": "ripu",
+// "coursename": "Javascript",
+// "fee": "Free"
+// }
