@@ -45,3 +45,4 @@ console.log("C", myArr); //after applying the splice original myArr will changed
 console.log(myn2); // print spliced element : [2,3,'ripu']
 
 // Major difference in Slice and Splice Method is that Splice manipulate the original array and Slice don't.
+//commits checking ...........
