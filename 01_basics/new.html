@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+        border: 4px solid black;
+		height:255px;
+		width:80vw;
+		padding:2px;
+		margin:2px;
+        }
+        .parent{
+		border: 4px red solid;
+		padding: 20px;
+		margin: 15px;
+		/* position: relative; */
+		}
+		.box1{
+		/* position: sticky; */
+		top: 0px;
+		background-color:red;
+		/* position:relative; */
+		}
+		.box2{
+		background-color:green;
+        /* color: inherit; */
+
+		/* position:absolute; */
+		top:0px;
+		left:0px;
+		}
+		.box3{
+		background-color:#0000ff;
+		/* position: relative; */
+		top: 10px;
+		left: 10vw;
+		}
+        .box2 span{
+            background-color: black;
+        }
+		.box4{
+		background-color:brown;
+		}
+		.box5{
+		background-color:yellow;
+		}
+        span{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">
+            <p>this is para <span>this is span</span></p>
+        </div>
+        <div class="box box2"><p>this is para <span class="extra">this is span</span></p></div>
+        <div class="box box3"><p>this is para <span>this is span</span></p></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        
+    </div>
+</body>
+</html>
